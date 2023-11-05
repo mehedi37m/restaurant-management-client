@@ -4,13 +4,13 @@ const Banner = () => {
     return (
         <div>
             
-            <div>
-            
-           
-            <div className="carousel relative w-full h-[800px]">
-                
-  <div id="item1" className="carousel-item w-full">
-    <img src={img1} className="w-full rounded-xl" />
+
+
+        <div>
+        <div className="carousel w-full h-[800px]">
+  <div id="slide1" className="carousel-item relative w-full">
+    <img src="https://i.ibb.co/9py6nf3/dan-gold-4-jh-DO54-BYg-unsplash.jpg" className="w-full" />
+
     <div className="absolute h-full rounded-xl flex items-center transform  left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
         <div className="text-white space-y-7 pl-12 w-1/2">
             <h1 className="text-6xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
@@ -21,39 +21,64 @@ const Banner = () => {
             </div>
         </div>
     </div>
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide4" className="btn btn-circle">❮</a> 
+      <a href="#slide2" className="btn btn-circle">❯</a>
+    </div>
   </div> 
 
-  <div id="item2" className="carousel-item w-full">
-    <img src={img2} className="w-full rounded-xl" />  
+  <div id="slide2" className="carousel-item relative w-full">
+    <img src="https://i.ibb.co/dDLSkdx/brooke-lark-M4-E7-X3z80-PQ-unsplash.jpg" className="w-full" />
+    <div className="absolute h-full rounded-xl flex items-center transform  left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
+        <div className="text-white space-y-7 pl-12 w-1/2">
+            <h1 className="text-6xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quas aliquid laborum facilis reiciendis, assumenda nostrum numquam sit doloribus nihil!</p>
+            <div className="">
+                <button className="btn btn-outline btn-secondary mr-5">Discover</button>
+                <button className="btn btn-outline btn-secondary">Latest Project</button>
+            </div>
+        </div>
+    </div>
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide1" className="btn btn-circle">❮</a> 
+      <a href="#slide3" className="btn btn-circle">❯</a>
+    </div>
   </div> 
-
-  <div id="item3" className="carousel-item w-full">
-    <img src={img3} className="w-full rounded-xl" />
+  <div id="slide3" className="carousel-item relative w-full">
+    <img src="https://i.ibb.co/k1rckt5/ca-creative-bp-PTl-XWTOvg-unsplash.jpg" className="w-full" />
+    <div className="absolute h-full rounded-xl flex items-center transform  left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
+        <div className="text-white space-y-7 pl-12 w-1/2">
+            <h1 className="text-6xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quas aliquid laborum facilis reiciendis, assumenda nostrum numquam sit doloribus nihil!</p>
+            <div className="">
+                <button className="btn btn-outline btn-secondary mr-5">Discover</button>
+                <button className="btn btn-outline btn-secondary">Latest Project</button>
+            </div>
+        </div>
+    </div>
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide2" className="btn btn-circle">❮</a> 
+      <a href="#slide4" className="btn btn-circle">❯</a>
+    </div>
   </div> 
-
-  <div id="item4" className="carousel-item w-full">
-    <img src={img4} className="w-full rounded-xl" />
+  <div id="slide4" className="carousel-item relative w-full">
+    <img src="https://i.ibb.co/VHTCXNg/jannis-brandt-mms-QUg-MLq-Uo-unsplash.jpg" className="w-full" />
+    <div className="absolute h-full rounded-xl flex items-center transform  left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21,21,21,0)]">
+        <div className="text-white space-y-7 pl-12 w-1/2">
+            <h1 className="text-6xl font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quas aliquid laborum facilis reiciendis, assumenda nostrum numquam sit doloribus nihil!</p>
+            <div className="">
+                <button className="btn btn-outline btn-secondary mr-5">Discover</button>
+                <button className="btn btn-outline btn-secondary">Latest Project</button>
+            </div>
+        </div>
+    </div>
+    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <a href="#slide3" className="btn btn-circle">❮</a> 
+      <a href="#slide1" className="btn btn-circle">❯</a>
+    </div>
   </div>
-
-  <div id="item5" className="carousel-item w-full">
-    <img src={img5} className="w-full rounded-xl" />
-  </div>
-
-  <div id="item6" className="carousel-item w-full">
-    <img src={img6} className="w-full rounded-xl" />
-  </div>
-
-</div> 
-<div className="flex justify-center w-full py-2 gap-2">
-  <a href="#item1" className="btn btn-xs">1</a> 
-  <a href="#item2" className="btn btn-xs">2</a> 
-  <a href="#item3" className="btn btn-xs">3</a> 
-  <a href="#item4" className="btn btn-xs">4</a>
-  <a href="#item5" className="btn btn-xs">5</a>
-  <a href="#item6" className="btn btn-xs">6</a>
 </div>
-
-
         </div>
  
 
