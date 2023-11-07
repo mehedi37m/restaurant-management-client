@@ -34,7 +34,7 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/allFood">All Food Items</NavLink>
+            <NavLink to="/allItems">All Food Items</NavLink>
           </li>
           <li>
           <NavLink to='/blog'>Blog</NavLink>
@@ -88,34 +88,6 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
        
-        {/* <div className="flex gap-2 items-center">
-            <p>{user && user.displayName}</p>
-            {user && (
-              <div
-                title={user.displayName}
-                className="mask h-12 w-12 mask-circle"
-              >
-                <img src={user.photoURL} />
-              </div>
-            )}
-          </div> */}
-
-           {/* <button className="" onClick={handleClick}>
-          {theme ? <BsSun size={30}></BsSun> : <FaMoon  size={30}></FaMoon>}
-        </button>  */}
-
-           {/* {user ? (
-            <button onClick={handleLogOut} className="btn btn-secondary border-none">
-              Sign Out
-            </button>
-          ) : (
-            <Link to="/login">
-              <button className="btn btn-primary">Login Now</button>
-            </Link>
-          )}  */}
-
-
-
 
 <div>
               {user ? (
@@ -139,8 +111,18 @@ const Navbar = () => {
                     className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-gray-950 rounded-box w-52"
                   >
                     <li className="text-white mb-3">
-                      <Link to={`/profile`} className="justify-between">
-                       My Profile
+                      <Link to={`/addListFood`} className="justify-between">
+                       My Added Food Items
+                      </Link>
+                    </li>
+                    <li className="text-white mb-3">
+                      <Link to={`/addItems`} className="justify-between">
+                      Add a Food Item
+                      </Link>
+                    </li>
+                    <li className="text-white mb-3">
+                      <Link to={`/orderFood`} className="justify-between">
+                       My Order Food Items
                       </Link>
                     </li>
 
