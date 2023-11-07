@@ -12,6 +12,7 @@ import AllFoodCard from "../Page/AllFood/AllFoodCard";
 import CardDetails from "../Page/AllFood/CardDetails";
 import UpdateItems from "../Component/ServerItems/UpdateItems/UpdateItems";
 import OrderItems from "../Component/ServerItems/OrderItems/OrderItems";
+import Blog from "../Page/Blog/Blog";
 
 const Routes = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ const Routes = createBrowserRouter([
         {
             path: "/allItems",
             element:<AllFoodCard></AllFoodCard>
+        },
+        {
+          path:"/blog",
+          element:<Blog></Blog>
         },
         {
             path: "/login",

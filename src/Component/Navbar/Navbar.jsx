@@ -52,8 +52,8 @@ const Navbar = () => {
         <div>
             
 
-            <div className="pb-10 ">
-      <div className="navbar bg-cyan-400 rounded-lg">
+            <div className="">
+      <div className="navbar bg-cyan-100 px-10 py-5 rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -80,7 +80,8 @@ const Navbar = () => {
             </ul>
           </div>
           <a className=" normal-case font-extrabold text-blue-900 text-3xl">
-            Sports shoes
+            <span className='text-red-900'>CZN</span> 
+            <span>BURAK</span>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">

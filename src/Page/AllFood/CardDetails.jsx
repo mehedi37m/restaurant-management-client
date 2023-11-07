@@ -56,9 +56,9 @@ const CardDetails = () => {
                   <span className='text-blue-900 font-bold'>Price</span> : ${price}
                   </p>
                 
-                  <p className='text-blue-900 font-bold py-4'>Category : {category}* </p>
-                  <p className='text-blue-900 font-bold '>Made By : {made_by}* </p>
-                  <p className='text-blue-900 font-bold py-4'>Food Origin : {food_origin}* </p>
+                  <p className='text-blue-900 font-bold pt-4'>Category : <span className='text-red-500'>{category}</span></p>
+                  <p className='text-blue-900 font-bold '>Made By : <span className='text-red-500'>{made_by}</span>  </p>
+                  <p className='text-blue-900 font-bold pb-4'>Food Origin : <span className='text-red-500'>{food_origin}</span>  </p>
 
 
                   <button onClick={()=>addToCart(allComponent)} className='btn btn-accent '>Add to Cart</button>

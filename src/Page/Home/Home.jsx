@@ -4,7 +4,7 @@ import Popular from '../Popular/Popular';
 
 const Home = () => {
     return (
-        <div>
+        <div className='my-10'>
             <Banner></Banner>
             <Popular></Popular>
         </div>
