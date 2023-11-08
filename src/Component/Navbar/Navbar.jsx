@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { FaBars, FaTimes, FaUserAlt } from "react-icons/fa";
+import Lottie from "lottie-react";
+import name from "../../assets/name.json"
 
 const Navbar = () => {
    
@@ -38,9 +40,6 @@ const Navbar = () => {
           </li>
           <li>
           <NavLink to='/blog'>Blog</NavLink>
-          </li>
-          <li>
-          <NavLink to="/register">Register</NavLink>
           </li>
         </>
       );
@@ -79,9 +78,10 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
+
           <a className=" normal-case font-extrabold text-blue-900 text-3xl">
-            <span className='text-red-900'>CZN</span> 
-            <span>BURAK</span>
+          <Lottie style={{height:'100px'}} animationData={name} loop={true} />
+          
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -109,7 +109,7 @@ const Navbar = () => {
                   </label>
                   <ul
                     tabIndex={0}
-                    className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-gray-950 rounded-box w-52"
+                    className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-gray-500 rounded-box w-52"
                   >
                     <li className="text-white mb-3">
                       <Link to={`/addedList`} className="justify-between">

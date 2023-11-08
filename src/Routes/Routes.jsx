@@ -6,7 +6,6 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Page/Home/Home";
 import Login from "../Component/Login/Login";
 import Register from "../Component/Register/Register";
-
 import AddItems from "../Component/ServerItems/AddItems/AddItems";
 import AllFoodCard from "../Page/AllFood/AllFoodCard";
 import CardDetails from "../Page/AllFood/CardDetails";
@@ -14,6 +13,7 @@ import UpdateItems from "../Component/ServerItems/UpdateItems/UpdateItems";
 import OrderItems from "../Component/ServerItems/OrderItems/OrderItems";
 import Blog from "../Page/Blog/Blog";
 import AddedList from "../Component/ServerItems/AddedList/AddedList";
+import PrivateRoute from "./PrivateRoute";
 
 const Routes = createBrowserRouter([
     {
@@ -49,13 +49,13 @@ const Routes = createBrowserRouter([
         },
         {
           path:"/details/:id",
-          element:<CardDetails></CardDetails>,
-          loader:() => fetch('http://localhost:5000/items')
+          element:<PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
+          loader:() => fetch('https://restaurrant-management-server-atxaiunrw.vercel.app/items')
         },
         {
           path:"/updateItems/:id",
           element:<UpdateItems></UpdateItems>,
-          loader:({params}) => fetch(`http://localhost:5000/items/${params.id}`)
+          loader:({params}) => fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/items/${params.id}`)
         },
         {
           path:"/orderFood",

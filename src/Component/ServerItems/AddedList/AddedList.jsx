@@ -10,7 +10,7 @@ const AddedList = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() =>{
-        fetch(`http://localhost:5000/myAddedItems/${user.email}`)
+        fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/myAddedItems/${user.email}`)
         .then(res => res.json())
         .then(data =>{
             console.log(data)
@@ -30,7 +30,7 @@ const AddedList = () => {
           confirmButtonText: "Yes, delete it!",
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`http://localhost:5000/items/${_id}`, {
+            fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/items/${_id}`, {
               method: "DELETE",
             })
               .then((res) => res.json())

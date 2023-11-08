@@ -28,7 +28,7 @@ const OrderItems = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/itemsCart/${_id}`, {
+        fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/itemsCart/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -92,7 +92,7 @@ const OrderItems = () => {
                 <td>{food.displayName}</td>
                 <td>{food.price}$</td>
                 <th>
-                  <button className="btn btn-ghost btn-xs">dite hobbe</button>
+                  <button className="btn btn-ghost btn-xs">{food.date}</button>
                 </th>
                 <th>
                   <button

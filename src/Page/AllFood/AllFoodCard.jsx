@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Cards from './Cards';
 import { Helmet } from 'react-helmet-async';
 
-const AllFoodCard = () => {
+const          AllFoodCard = () => {
 
 const [foodCards, setFoodCards] = useState([]);
 const [searchFood, setSearchFood] = useState('');
@@ -14,7 +14,7 @@ const numberOfPages = Math.ceil(count / itemsPerPage)
 const pages = [...Array(numberOfPages).keys()]
 
 useEffect(()=>{
-    fetch('http://localhost:5000/itemsCount')
+    fetch('https://restaurrant-management-server-atxaiunrw.vercel.app/itemsCount')
     .then(res => res.json())
     .then(data => {
         setCount(data.count)
@@ -22,7 +22,7 @@ useEffect(()=>{
 },[])
 
 useEffect(() =>{
-    fetch(`http://localhost:5000/items?page=${currentPage}&size=${itemsPerPage}`)
+    fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/items?page=${currentPage}&size=${itemsPerPage}`)
     .then(res => res.json())
     .then(data => setFoodCards(data))
 },[currentPage, itemsPerPage])
@@ -31,7 +31,7 @@ useEffect(() =>{
 
 
 const handleSearch = () => {
-    fetch(`http://localhost:5000/SearchFood/${searchFood}`)
+    fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/SearchFood/${searchFood}`)
     .then(res => res.json())
     .then(data => {
         setFoodCards(data)

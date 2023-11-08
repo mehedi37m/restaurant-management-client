@@ -22,7 +22,7 @@ const CardDetails = () => {
    const addToCart = () => {
 
   
-    fetch("http://localhost:5000/itemsCart", {
+    fetch("https://restaurrant-management-server-atxaiunrw.vercel.app/itemsCart", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(allComponent),

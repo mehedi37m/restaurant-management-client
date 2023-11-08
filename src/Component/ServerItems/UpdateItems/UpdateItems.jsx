@@ -24,7 +24,7 @@ const {_id, food_name, food_origin,img, category, quantity, price, made_by, desc
    const updateItem = {food_name, food_origin,img, category, quantity, price, made_by, description}
 
 
-   fetch(`http://localhost:5000/items/${_id}`,{
+   fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/items/${_id}`,{
     method: "PUT",
     headers: {
       "content-type": "application/json",

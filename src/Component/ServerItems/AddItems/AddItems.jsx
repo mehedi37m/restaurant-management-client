@@ -19,12 +19,13 @@ const handleAddItems = e => {
     const made_by = form.made_by.value;
     const description = form.description.value;
     const food_origin = form.food_origin.value;
+    const date = form.date.value;
 
-   const newItems = {food_name, food_origin,img, email, displayName, category, quantity, price, made_by, description}
+   const newItems = {food_name, date, food_origin,img, email, displayName, category, quantity, price, made_by, description}
 
 
 
-   fetch("http://localhost:5000/items", {
+   fetch("https://restaurrant-management-server-atxaiunrw.vercel.app/items", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -77,6 +78,16 @@ const handleAddItems = e => {
             <input name="img"
               type="text"
               placeholder="Image"
+              className="input input-bordered"
+              required
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Date</span>
+            </label>
+            <input name="date"
+              type="date"
               className="input input-bordered"
               required
             />
