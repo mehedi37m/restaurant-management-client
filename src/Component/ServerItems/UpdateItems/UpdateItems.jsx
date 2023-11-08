@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLoaderData } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -49,6 +50,9 @@ const {_id, food_name, food_origin,img, category, quantity, price, made_by, desc
 
     return (
         <div>
+          <Helmet>
+                <title>CZNBURAK || UpdateItems</title>
+            </Helmet>
              <div className="grid justify-items-center my-10">
       <div className=" w-full max-w-sm shadow-2xl bg-base-100">
         <form onSubmit={handleUpdateItem} className="card-body">

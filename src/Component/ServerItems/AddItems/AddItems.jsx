@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
 
 const AddItems = () => {
@@ -50,6 +51,9 @@ const handleAddItems = e => {
 
   return (
     <div className="grid justify-items-center my-10">
+      <Helmet>
+                <title>CZNBURAK || AddItems</title>
+            </Helmet>
       <div className=" w-full max-w-sm shadow-2xl bg-base-100">
         <form onSubmit={handleAddItems} className="card-body">
           <div className="form-control">

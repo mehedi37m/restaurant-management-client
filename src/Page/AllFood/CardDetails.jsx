@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { Helmet } from 'react-helmet-async';
 
 const CardDetails = () => {
 
@@ -45,6 +46,9 @@ const CardDetails = () => {
 
     return (
         <div>
+          <Helmet>
+                <title>CZNBURAK || ItemsDetails</title>
+            </Helmet>
               <div  class="card grid lg:grid-cols-2 card-side  bg-base-100 shadow-xl mb-5">
                 
                 <div class="p-10 bg-slate-50 text-center">

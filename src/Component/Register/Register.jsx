@@ -3,6 +3,7 @@ import { AuthContext } from '../../Provider/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { updateProfile } from 'firebase/auth';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
 
@@ -81,6 +82,9 @@ const Register = () => {
              
     
                <div>
+                <Helmet>
+                <title>CZNBURAK || Register</title>
+            </Helmet>
                <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col ">
         <div className="text-center lg:text-left">

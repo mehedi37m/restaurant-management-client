@@ -43,6 +43,9 @@ const OrderItems = () => {
 
   return (
     <div>
+      <Helmet>
+                <title>CZNBURAK || OrderItems</title>
+            </Helmet>
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
