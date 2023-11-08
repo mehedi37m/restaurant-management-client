@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Helmet } from "react-helmet-async";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../../Provider/AuthProvider";
 
 const AddItems = () => {
 
+  const {user} = useContext(AuthContext)
+  const {email, displayName} = user;
 
 const handleAddItems = e => {
     e.preventDefault();
@@ -17,7 +20,7 @@ const handleAddItems = e => {
     const description = form.description.value;
     const food_origin = form.food_origin.value;
 
-   const newItems = {food_name, food_origin,img, category, quantity, price, made_by, description}
+   const newItems = {food_name, food_origin,img, email, displayName, category, quantity, price, made_by, description}
 
 
 

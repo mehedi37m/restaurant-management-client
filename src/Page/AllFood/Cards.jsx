@@ -7,7 +7,7 @@ const Cards = ({card}) => {
     return (
         <div>
             <div className="card card-compact h-[500px] glass w-96 bg-base-100 shadow-xl">
-  <figure><img className='h-64 w-full' src={img} alt="Shoes" /></figure>
+  <figure><img className='h-64 w-full' src={img} alt="Food" /></figure>
   <div className="card-body">
     <h2 className="card-title text-2xl font-bold">{food_name}</h2>
     <p className='text-xl font-bold text-blue-900 '>{category}</p>

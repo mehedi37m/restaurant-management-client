@@ -112,7 +112,7 @@ const Navbar = () => {
                     className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-gray-950 rounded-box w-52"
                   >
                     <li className="text-white mb-3">
-                      <Link to={`/addListFood`} className="justify-between">
+                      <Link to={`/addedList`} className="justify-between">
                        My Added Food Items
                       </Link>
                     </li>

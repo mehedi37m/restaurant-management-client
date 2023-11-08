@@ -10,9 +10,11 @@ const {user, loading} = useContext(AuthContext);
 const location = useLocation();
 
 if(loading){
-    return <div  >
-       {/* <Lottie animationData={loadingLottie}></Lottie> */}
-       <h1 className='text-6xl font-extrabold'>Loading</h1>
+    return <div className='h-screen flex justify-center items-center' >
+      
+   
+       <span className="loading loading-spinner loading-lg"></span>
+      
     </div>
 }
   if (user){

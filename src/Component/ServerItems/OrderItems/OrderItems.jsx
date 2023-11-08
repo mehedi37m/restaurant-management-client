@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import AuthProvider, { AuthContext } from "../../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../hooks/useAxiosSecure";
+import { Helmet } from "react-helmet-async";
 
 const OrderItems = () => {
   const [orderFood, setOrderFood] = useState([]);
@@ -42,10 +43,11 @@ const OrderItems = () => {
   };
 
   return (
-    <div>
+    <div className="h-screen md:h-[80vh]">
       <Helmet>
                 <title>CZNBURAK || OrderItems</title>
             </Helmet>
+      <div className="pt-20">
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
@@ -105,6 +107,7 @@ const OrderItems = () => {
           </tbody>
           {/* foot */}
         </table>
+      </div>
       </div>
     </div>
   );

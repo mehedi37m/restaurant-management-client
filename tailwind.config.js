@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'parallax': 'url("../public/parallax.jpg")',
+      }
+    },
   },
   plugins: [require("daisyui")],
 }

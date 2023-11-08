@@ -13,11 +13,12 @@ import CardDetails from "../Page/AllFood/CardDetails";
 import UpdateItems from "../Component/ServerItems/UpdateItems/UpdateItems";
 import OrderItems from "../Component/ServerItems/OrderItems/OrderItems";
 import Blog from "../Page/Blog/Blog";
+import AddedList from "../Component/ServerItems/AddedList/AddedList";
 
 const Routes = createBrowserRouter([
     {
       path: "/",
-      element: <Root></Root>,
+      element: <Root> </Root>,
       errorElement:<ErrorPage></ErrorPage>,
       children: [
         {
@@ -59,6 +60,10 @@ const Routes = createBrowserRouter([
         {
           path:"/orderFood",
           element:<OrderItems></OrderItems>
+        },
+        {
+          path:"/addedList",
+          element:<AddedList></AddedList>
         }
 
       ]

@@ -45,11 +45,12 @@ const CardDetails = () => {
   };
 
     return (
-        <div>
+        <div className='h-screen md:h-[80vh]'>
           <Helmet>
                 <title>CZNBURAK || ItemsDetails</title>
             </Helmet>
-              <div  class="card grid lg:grid-cols-2 card-side  bg-base-100 shadow-xl mb-5">
+             <div className=' p-20'>
+             <div  class="card grid grid-cols-1 md:grid-cols-2 card-side  bg-base-100 shadow-xl mb-5">
                 
                 <div class="p-10 bg-slate-50 text-center">
                   <h2 class=" font-bold mb-5 text-blue-900 text-3xl">{food_name}</h2>
@@ -75,6 +76,8 @@ const CardDetails = () => {
                   />
                 
                 </div>
+             </div>
+
         </div>
     );
 };
