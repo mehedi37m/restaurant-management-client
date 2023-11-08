@@ -50,12 +50,12 @@ const Routes = createBrowserRouter([
         {
           path:"/details/:id",
           element:<PrivateRoute><CardDetails></CardDetails></PrivateRoute>,
-          loader:() => fetch('https://restaurrant-management-server-atxaiunrw.vercel.app/items')
+          loader:() => fetch('https://restaurrant-management-server.vercel.app/items')
         },
         {
           path:"/updateItems/:id",
           element:<UpdateItems></UpdateItems>,
-          loader:({params}) => fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/items/${params.id}`)
+          loader:({params}) => fetch(`https://restaurrant-management-server.vercel.app/items/${params.id}`)
         },
         {
           path:"/orderFood",

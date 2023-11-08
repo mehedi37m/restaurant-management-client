@@ -28,7 +28,7 @@ const OrderItems = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/itemsCart/${_id}`, {
+        fetch(`https://restaurrant-management-server.vercel.app/itemsCart/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

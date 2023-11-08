@@ -8,7 +8,7 @@ const HomeCard = () => {
     const [foodCards, setFoodCards] = useState([]);
 
     useEffect(() =>{
-        fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/items`)
+        fetch(`https://restaurrant-management-server.vercel.app/items`)
         .then(res => res.json())
         .then(data => setFoodCards(data))
     },[])

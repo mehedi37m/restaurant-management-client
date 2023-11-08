@@ -10,7 +10,7 @@ const AddedList = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() =>{
-        fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/myAddedItems/${user.email}`)
+        fetch(`https://restaurrant-management-server.vercel.app/myAddedItems/${user.email}`)
         .then(res => res.json())
         .then(data =>{
             console.log(data)
@@ -30,7 +30,7 @@ const AddedList = () => {
           confirmButtonText: "Yes, delete it!",
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/items/${_id}`, {
+            fetch(`https://restaurrant-management-server.vercel.app/items/${_id}`, {
               method: "DELETE",
             })
               .then((res) => res.json())

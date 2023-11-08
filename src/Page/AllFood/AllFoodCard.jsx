@@ -14,7 +14,7 @@ const numberOfPages = Math.ceil(count / itemsPerPage)
 const pages = [...Array(numberOfPages).keys()]
 
 useEffect(()=>{
-    fetch('https://restaurrant-management-server-atxaiunrw.vercel.app/itemsCount')
+    fetch('https://restaurrant-management-server.vercel.app/itemsCount')
     .then(res => res.json())
     .then(data => {
         setCount(data.count)
@@ -22,7 +22,7 @@ useEffect(()=>{
 },[])
 
 useEffect(() =>{
-    fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/items?page=${currentPage}&size=${itemsPerPage}`)
+    fetch(`https://restaurrant-management-server.vercel.app/items?page=${currentPage}&size=${itemsPerPage}`)
     .then(res => res.json())
     .then(data => setFoodCards(data))
 },[currentPage, itemsPerPage])
@@ -31,7 +31,7 @@ useEffect(() =>{
 
 
 const handleSearch = () => {
-    fetch(`https://restaurrant-management-server-atxaiunrw.vercel.app/SearchFood/${searchFood}`)
+    fetch(`https://restaurrant-management-server.vercel.app/SearchFood/${searchFood}`)
     .then(res => res.json())
     .then(data => {
         setFoodCards(data)

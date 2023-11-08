@@ -19,7 +19,7 @@ const Cards = ({card}) => {
     </div>
     <div className="card-actions justify-start">
      <Link to={`/details/${_id}`}> <button className="btn btn-primary">Details</button></Link>
-     <Link to={`/updateItems/${_id}`}> <button className="btn btn-primary">update</button></Link>
+     {/* <Link to={`/updateItems/${_id}`}> <button className="btn btn-primary">update</button></Link> */}
     </div>
   </div>
 </div>

@@ -48,13 +48,13 @@ useEffect(() => {
         setLoading(false);
         // if user exists then issue a token
         if (currentUser) {
-            axios.post('https://restaurrant-management-server-atxaiunrw.vercel.app/jwt', loggedUser, { withCredentials: true })
+            axios.post('https://restaurrant-management-server.vercel.app/jwt', loggedUser, { withCredentials: true })
                 .then(res => {
                     console.log('token response', res.data);
                 })
         }
         else {
-            axios.post('https://restaurrant-management-server-atxaiunrw.vercel.app/logout', loggedUser, {
+            axios.post('https://restaurrant-management-server.vercel.app/logout', loggedUser, {
                 withCredentials: true
             })
                 .then(res => {

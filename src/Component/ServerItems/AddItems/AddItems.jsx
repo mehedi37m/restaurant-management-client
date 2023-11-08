@@ -25,7 +25,7 @@ const handleAddItems = e => {
 
 
 
-   fetch("https://restaurrant-management-server-atxaiunrw.vercel.app/items", {
+   fetch("https://restaurrant-management-server.vercel.app/items", {
     method: "POST",
     headers: {
       "content-type": "application/json",
