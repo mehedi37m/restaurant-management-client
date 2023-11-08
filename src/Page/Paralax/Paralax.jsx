@@ -6,7 +6,7 @@ const Paralax = () => {
       <div className=" grid justify-items-center items-center  h-96 bg-fixed bg-parallax bg-cover">
        <div >
         <p className="text-white font-bold text-center">RESERVE A TABLE</p>
-       <h1 className="text-5xl font-bold text-white">OPEN HOURS</h1>
+       <h1 className="text-5xl font-bold text-white"><span className="text-red-700">O</span>PEN <span className="text-blue-700">H</span>OURS</h1>
        <hr />
        </div>
        
