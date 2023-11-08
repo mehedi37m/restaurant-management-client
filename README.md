@@ -1,8 +1,10 @@
-# React + Vite
+* Restaurant-Management
+Live link : https://restaurant-manag.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+5 main features of the restaurant website 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Attractive Visual Design.
+* Clear and Intuitive Navigation.
+* Menu Presentation.
+* Reservation and Contact Information.
+* Customer Reviews and Testimonials.
